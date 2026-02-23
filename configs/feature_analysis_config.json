@@ -1,0 +1,80 @@
+{
+  "_description": "Configuration for cyclic peptide feature analysis",
+  "_source": "Extracted from examples/use_case_4_feature_analysis.py",
+
+  "methods": ["concate", "cross_attention", "attention"],
+  "random_seed": 42,
+  "performance_variation": 0.02,
+
+  "analysis_settings": {
+    "num_features": 5,
+    "include_performance_metrics": ["r2", "rmse", "mae", "pcc"],
+    "include_computational_costs": ["training_time", "inference_time", "memory_usage"]
+  },
+
+  "plotting": {
+    "output_formats": ["png"],
+    "plot_dpi": 300,
+    "figure_size": {
+      "performance_plots": [12, 10],
+      "cost_plots": [15, 5],
+      "heatmap": [12, 6]
+    },
+    "style_settings": {
+      "alpha": 0.8,
+      "fontsize_title": 14,
+      "fontsize_labels": 12
+    }
+  },
+
+  "simulation_parameters": {
+    "base_performance": {
+      "concate": {
+        "r2": 0.7431,
+        "rmse": 0.8221,
+        "mae": 0.6554,
+        "pcc": 0.8721
+      },
+      "cross_attention": {
+        "r2": 0.7861,
+        "rmse": 0.8022,
+        "mae": 0.6234,
+        "pcc": 0.8934
+      },
+      "attention": {
+        "r2": 0.7623,
+        "rmse": 0.8156,
+        "mae": 0.6398,
+        "pcc": 0.8812
+      }
+    },
+    "computational_costs": {
+      "concate": {
+        "training_time": 120,
+        "inference_time": 0.05,
+        "memory_usage": 2.1
+      },
+      "cross_attention": {
+        "training_time": 180,
+        "inference_time": 0.08,
+        "memory_usage": 3.2
+      },
+      "attention": {
+        "training_time": 150,
+        "inference_time": 0.06,
+        "memory_usage": 2.8
+      }
+    }
+  },
+
+  "feature_importance_settings": {
+    "feature_names": [
+      "smiles_features",
+      "image_features",
+      "molecular_weight",
+      "logp",
+      "tpsa"
+    ],
+    "importance_variation": 0.05
+  }
+}

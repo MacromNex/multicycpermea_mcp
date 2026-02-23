@@ -1,0 +1,32 @@
+{
+  "_description": "Configuration for cyclic peptide image generation",
+  "_source": "Extracted from examples/use_case_1_draw_peptide_images.py",
+
+  "image_size": [600, 600],
+  "image_format": "png",
+  "use_coord_gen": true,
+  "batch_size": 100,
+
+  "io_settings": {
+    "temp_dir": "./temp",
+    "cleanup_temp_files": true,
+    "create_updated_csv": true
+  },
+
+  "rdkit_settings": {
+    "prefer_coord_gen": true,
+    "prepare_mol_for_drawing": true
+  },
+
+  "quality_settings": {
+    "svg_width": 600,
+    "svg_height": 600,
+    "png_dpi": 96
+  },
+
+  "error_handling": {
+    "continue_on_error": true,
+    "log_failed_molecules": true,
+    "max_failures": 1000
+  }
+}

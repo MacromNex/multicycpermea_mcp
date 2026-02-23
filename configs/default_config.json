@@ -1,0 +1,36 @@
+{
+  "_description": "Default configuration settings for all MCP cyclic peptide scripts",
+  "_version": "1.0.0",
+
+  "common_settings": {
+    "random_seed": 42,
+    "output_format": "png",
+    "create_output_dirs": true,
+    "cleanup_temp_files": true
+  },
+
+  "data_validation": {
+    "required_columns": ["SMILES"],
+    "optional_columns": ["CycPeptMPDB_ID"],
+    "validate_smiles": true,
+    "max_sequence_length": 100
+  },
+
+  "performance": {
+    "batch_size": 100,
+    "memory_limit_gb": 8,
+    "max_parallel_jobs": 4
+  },
+
+  "logging": {
+    "level": "INFO",
+    "log_to_file": false,
+    "progress_reporting": true
+  },
+
+  "paths": {
+    "temp_dir": "./temp",
+    "output_base": "./results",
+    "data_base": "./examples/data"
+  }
+}
