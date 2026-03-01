@@ -1,0 +1,75 @@
+{
+  "test_date": "2026-01-01T02:15:38.563420",
+  "project_root": "/home/xux/Desktop/CycPepMCP/CycPepMCP/tool-mcps/multicycpermea_mcp",
+  "python_env": "/home/xux/Desktop/CycPepMCP/CycPepMCP/tool-mcps/multicycpermea_mcp/env/bin/python",
+  "server_path": "/home/xux/Desktop/CycPepMCP/CycPepMCP/tool-mcps/multicycpermea_mcp/src/server.py",
+  "tests": {
+    "environment_dependencies": {
+      "status": "passed",
+      "output": "Python 3.10.19 with all dependencies",
+      "error": "",
+      "duration": 1.6628365516662598,
+      "details": {}
+    },
+    "server_import": {
+      "status": "passed",
+      "output": "Server import OK",
+      "error": "",
+      "duration": 2.1799116134643555,
+      "details": {}
+    },
+    "job_manager_init": {
+      "status": "passed",
+      "output": "Job manager OK, jobs dir: /home/xux/Desktop/CycPepMCP/CycPepMCP/tool-mcps/multicycpermea_mcp/jobs",
+      "error": "",
+      "duration": 0.09090447425842285,
+      "details": {}
+    },
+    "script_imports": {
+      "status": "passed",
+      "output": "All script imports successful",
+      "error": "",
+      "duration": 1.4413866996765137,
+      "details": {}
+    },
+    "example_data": {
+      "status": "passed",
+      "output": "{\n  \"test_small.csv\": {\n    \"size\": 13560,\n    \"lines_sample\": 3,\n    \"readable\": true\n  },\n  \"test.csv\": {\n    \"size\": 1619499,\n    \"lines_sample\": 3,\n    \"readable\": true\n  },\n  \"train.csv\": {\n    \"size\": 12229631,\n    \"lines_sample\": 3,\n    \"readable\": true\n  },\n  \"val.csv\": {\n    \"size\": 1601434,\n    \"lines_sample\": 3,\n    \"readable\": true\n  }\n}",
+      "error": "",
+      "duration": 0.04304313659667969,
+      "details": {}
+    },
+    "mcp_tools_count": {
+      "status": "passed",
+      "output": "Found 14 tools",
+      "error": "",
+      "duration": 0.005654573440551758,
+      "details": {}
+    },
+    "fastmcp_dev_mode": {
+      "status": "failed",
+      "output": "Starting MCP inspector...\n",
+      "error": "2026-01-01 02:15:44.978 | INFO     | jobs.manager:__init__:50 - JobManager initialized with jobs_dir: /home/xux/Desktop/CycPepMCP/CycPepMCP/tool-mcps/multicycpermea_mcp/jobs\n\u274c  Proxy Server PORT IS IN USE at port 6277 \u274c \n",
+      "duration": 4.633638858795166,
+      "details": {}
+    },
+    "claude_mcp_registration": {
+      "status": "passed",
+      "output": "Server registered and connected",
+      "error": "",
+      "duration": 2.9506144523620605,
+      "details": {}
+    }
+  },
+  "issues": [],
+  "summary": {
+    "total_tests": 8,
+    "passed": 4,
+    "warnings": 0,
+    "failed": 1,
+    "errors": 0,
+    "pass_rate": "50.0%",
+    "success_rate": "50.0%"
+  },
+  "performance": {}
+}
